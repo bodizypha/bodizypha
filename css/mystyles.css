@@ -1,0 +1,29 @@
+body {
+    background-image: url(../img/free-paisley-background-vector.jpg);
+    background-attachment: fixed;
+}
+
+#nav-logo {
+    width: 200px;
+    height: 50px;
+}
+
+.bodi-logo {
+    margin-top: 10%;
+    text-align: right;
+}
+
+#AboutMe {
+    margin-top: 10%;
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    margin-bottom: 25px;
+}
+li {
+ display: inline; 
+}
+#linkedinlogo, #twitterlogo {
+    width: 50px;
+    height: 50px;
+}

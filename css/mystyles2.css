@@ -1,0 +1,40 @@
+body {
+    background-color: #eee;
+}
+
+#margin {
+    margin-top: 10px;
+}
+
+.row {
+    margin: auto;
+}
+
+#social {
+    padding: 25px;
+}
+
+#dvMap {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+#column1 {
+    border-top: 5px solid blue;
+    border-left: 5px solid blue;
+    border-bottom: 5px solid blue;
+    height: 958px;
+    background-color: black;
+}
+#column2 {
+    border: 5px solid blue;
+    background-color: black;
+}
+#column3 {
+    border-top: 5px solid blue;
+    border-right: 5px solid blue;
+    border-bottom: 5px solid blue;
+    height: 958px;
+    background-color: black;
+}

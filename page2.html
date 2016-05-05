@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Food Truck Finder ver3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/mystyles.css" />
+</head>
+
+<body>
+    <div id="margin"></div>
+    <div class="container">
+        <div class="jumbotron">
+           <img src="img/FTF%20-3.png" width="100" height="100"><img src="img/Title.png">
+
+        </div>
+        <div class="row">
+            <div class="col-sm-3" id="column1">
+                <div id="social">
+                    <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+                    <button type="button" class="btn btn-default navbar-btn">Register</button>
+                    <h2>Social Media</h2>
+                    <a href="https://www.facebook.com/FoodTruckFinderAustin/"><img src="img/fb-art.jpg" width="50" height="50">
+                    </a>
+
+                    <a href="https://www.instagram.com/foodtruckfinderatx/"><img src="img/Multi-Color_Logo_thumbnail200.png" width="50" height="50">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6" id="column2">
+                <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+                <script type="text/javascript">
+                    var markers = [
+                        {
+                            "title": 'Garbos Restaurant',
+                            "lat": '30.446051',
+                            "lng": '-97.685363',
+                            "description": 'garboslobsteratx.com'
+    },
+                        {
+                            "title": 'Art of Tacos',
+                            "lat": '30.258397',
+                            "lng": '-97.738594',
+                            "description": 'artoftacos.com'
+    },
+                        {
+                            "title": 'Cow Tipping Creamery',
+                            "lat": '30.290524',
+                            "lng": '-97.744690',
+                            "description": 'cowtippingcreamery.com'
+    },
+                        {
+                            "title": 'La Barbeque',
+                            "lat": '30.257146',
+                            "lng": '-97.723919',
+                            "description": 'labarbecue.com'
+    },
+                        {
+                            "title": 'East Side King',
+                            "lat": '30.247532',
+                            "lng": '-97.774713',
+                            "description": 'www.ESKAustin.com'
+    },
+                        {
+                            "title": 'Geddys BBQ',
+                            "lat": '30.269508',
+                            "lng": '-97.817123',
+                            "description": 'Geddys BBQ'
+    },
+                        {
+                            "title": 'Svantes Stuffed Burger',
+                            "lat": '30.508661',
+                            "lng": '-97.677425',
+                            "description": 'Svantes Stuffed Burger'
+    },
+                        {
+                            "title": 'Roppolos Pizzeria',
+                            "lat": '30.267472',
+                            "lng": '-97.739661',
+                            "description": 'Roppolos Pizzeria'
+    },
+                        {
+                            "title": 'Patika Coffee',
+                            "lat": '30.266404',
+                            "lng": '-97.744185',
+                            "description": 'Patika Coffee'
+    },
+                        {
+                            "title": 'Baton Creole',
+                            "lat": '30.264840',
+                            "lng": '-97.730867',
+                            "description": 'Baton Creole'
+    },
+                        {
+                            "title": 'Via 313 Pizza',
+                            "lat": '30.257926',
+                            "lng": '-97.738826',
+                            "description": 'Via 313 Pizza'
+    },
+                        {
+                            "title": 'Llamas Food Trailer',
+                            "lat": '30.267719',
+                            "lng": '-97.738938',
+                            "description": 'Llamas Food Trailer'
+    },
+                        {
+                            "title": 'Jos Coffee',
+                            "lat": '30.251046',
+                            "lng": '-97.749391',
+                            "description": 'Jos Coffee'
+    },
+                        {
+                            "title": 'Turf N Surf PoBoy',
+                            "lat": '30.267194',
+                            "lng": '-97.745590',
+                            "description": 'Turf N Surf PoBoy'
+    },
+                        {
+                            "title": 'The Beef Cake Shop',
+                            "lat": '30.258694',
+                            "lng": '-97.739097',
+                            "description": 'The Beef Cake Shop'
+    },
+                        {
+                            "title": 'East Side Pies',
+                            "lat": '30.268771',
+                            "lng": '-97.724067',
+                            "description": 'East Side Pies'
+    },
+                        {
+                            "title": 'Co-op Food Court',
+                            "lat": '30.286199',
+                            "lng": '-97.742561',
+                            "description": 'Co-op Food Court'
+    },
+                        {
+                            "title": 'DFG Noodles',
+                            "lat": '30.264851',
+                            "lng": '-97.748690',
+                            "description": 'DFG Noodles'
+    },
+                        {
+                            "title": 'my grannys kitchen',
+                            "lat": '30.185247',
+                            "lng": '-97.792145',
+                            "description": 'my grannys kitchen'
+    },
+                        {
+                            "title": 'Fresh off the Truck',
+                            "lat": '30.296571',
+                            "lng": '-97.707424',
+                            "description": 'Fresh off the Truck'
+    },
+                        {
+                            "title": 'Fat Cactus',
+                            "lat": '30.250591',
+                            "lng": '-97.749285',
+                            "description": 'Fat Cactus'
+    },
+                        {
+                            "title": 'OMG! Cheesecakery',
+                            "lat": '30.246815',
+                            "lng": '-97.776718',
+                            "description": 'OMG! Cheesecakery'
+    },
+                        {
+                            "title": 'Cow Bells',
+                            "lat": '30.245332',
+                            "lng": '-97.730211',
+                            "description": 'Cow Bells'
+    },
+                        {
+                            "title": 'Salsa and Kimchi',
+                            "lat": '30.245332',
+                            "lng": '-97.730211',
+                            "description": 'Salsa and Kimchi'
+    },
+                        {
+                            "title": 'RockawayBeachATX',
+                            "lat": '30.245332',
+                            "lng": '-97.730211',
+                            "description": 'RockawayBeachATX'
+    },
+                        {
+                            "title": 'Churro Co',
+                            "lat": '30.245332',
+                            "lng": '-97.730211',
+                            "description": 'Churro Co'
+    },
+                        {
+                            "title": 'Trailer Treasure',
+                            "lat": '30.264867',
+                            "lng": '-97.731052',
+                            "description": 'Trailer Treasure'
+    },
+                        {
+                            "title": 'King & Country Food Co',
+                            "lat": '30.272420',
+                            "lng": '-97.745530',
+                            "description": 'King & Country Food Co'
+    },
+                        {
+                            "title": 'South ATX BBQ',
+                            "lat": '29.996804',
+                            "lng": '-97.870950',
+                            "description": 'South ATX BBQ'
+    },
+
+    ];
+                    window.onload = function () {
+                        LoadMap();
+                    }
+
+                    function LoadMap() {
+                        var mapOptions = {
+                            center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
+                            zoom: 10,
+                            mapTypeId: google.maps.MapTypeId.ROADMAP
+                        };
+                        var map = new google.maps.Map(document.getElementById("dvMap"), mapOptions);
+
+                        //Create and open InfoWindow.
+                        var infoWindow = new google.maps.InfoWindow();
+
+                        for (var i = 0; i < markers.length; i++) {
+                            var data = markers[i];
+                            var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+                            var marker = new google.maps.Marker({
+                                position: myLatlng,
+                                map: map,
+                                title: data.title
+                            });
+
+                            //Attach click event to the marker.
+                            (function (marker, data) {
+                                google.maps.event.addListener(marker, "click", function (e) {
+                                    //Wrap the content inside an HTML DIV in order to set height and width of InfoWindow.
+                                    infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + data.description + "</div>");
+                                    infoWindow.open(map, marker);
+                                });
+                            })(marker, data);
+                        }
+                    }
+                </script>
+                <div id="dvMap">
+                </div>
+
+                <br>
+
+                <a class="twitter-timeline" href="https://twitter.com/FTFATX" data-widget-id="701192187594211328">Tweets by @FTFATX</a>
+                <script>
+                    ! function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0],
+                            p = /^http:/.test(d.location) ? 'http' : 'https';
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = p + "://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, "script", "twitter-wjs");
+                </script>
+
+            </div>
+            <div class="col-sm-3" id="column3">
+                <a href="http://howdidigethere.podbean.com/"</a><img src="img/JG-logo-final-6x6.jpg" width="200" height="200>">
+                <hr>
+                <a href="http://www.bawls.com/"</a><img src="img/main_image_4.6.16.jpg" width="200" height="100">
+                <hr>
+                <a href="https://www.austincodingacademy.com/"</a><img src="img/ACA-header-logo.png" width="200" height="60">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+
+</html>

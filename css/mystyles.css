@@ -1,11 +1,12 @@
 body {
-    background-image: url(../img/free-paisley-background-vector.jpg);
+    background-image: url("http://www.animateit.net/data/media/august2009/twi.gif");
     background-attachment: fixed;
 }
 
-#nav-logo {
-    width: 200px;
-    height: 50px;
+.navbar {
+    height: 10px;
+    background-color: white;
+    
 }
 
 .bodi-logo {
@@ -13,17 +14,39 @@ body {
     text-align: right;
 }
 
-#AboutMe {
+#mediaprofessional {
     margin-top: 10%;
     width: 100%;
-    height: 350px;
+    height: 400px;
     background-color: white;
     margin-bottom: 25px;
 }
-li {
- display: inline; 
+
+#projects {
+    margin-top: 10%;
+    width: 100%;
+    height: 275px;
+    background-color: white;
+    margin-bottom: 25px;
+    text-align: left;
 }
-#linkedinlogo, #twitterlogo {
+
+#WebDev {
+    margin-top: 10%;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    margin-bottom: 25px;
+}
+
+li {
+    display: inline;
+}
+
+#linkedinlogo,
+#twitterlogo {
     width: 50px;
     height: 50px;
 }
+
+#resume {}
